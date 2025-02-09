@@ -32,9 +32,9 @@ def get_vectorstore(settings = settings, async_mode: bool = False) -> PGVector:
     embeddings = get_embedding_function()
 
     if async_mode:
-        engine = create_async_engine(str(settings.db_host))
+        engine = create_async_engine(str(settings.db_url))
     else:
-        engine = create_engine(str(settings.db_host))
+        engine = create_engine(str(settings.db_url))
 
     vectorstore = PGVector(
         embeddings=embeddings,

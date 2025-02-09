@@ -11,4 +11,8 @@ RUN pip install -r requirements.txt
 
 COPY . /app/
 
+# ENV PYTHONPATH="${PYTHONPATH}:/app"
+
+WORKDIR /app/src
+
 CMD ["python", "service/embeddings.py"]

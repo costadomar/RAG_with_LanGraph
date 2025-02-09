@@ -1,4 +1,5 @@
 pypdf
+pydantic
 pydantic_settings
 langchain
 langchain_cohere 
@@ -8,11 +9,12 @@ langchain_community
 psycopg[binary]
 psycopg2[binary]
 langchain_core
-pydantic_settings
 chainlit
 unstructured
 docx
 docx2txt
 langchain_groq
-logging
-uvicorn
+langchain_openai
+fastapi[all]
+uvicorn[standard]
+# logging

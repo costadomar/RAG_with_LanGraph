@@ -7,10 +7,13 @@ RUN apt-get update && apt-get install -y \
     gcc
 
 COPY requirements.txt /app/
+
 RUN pip install -r requirements.txt
 
 COPY . /app/
 
-EXPOSE 8000
+WORKDIR /app/src
 
-CMD ["chainlit", "run", "src/app.py"]
+EXPOSE 3500
+
+CMD ["uvicorn", "--host=0.0.0.0", "main:app", "--port", "3500"]

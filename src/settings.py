@@ -17,7 +17,9 @@ class Settings(BaseSettings):
     db_host: Optional[PostgresDsn] = None
 
     data_path: str = './documents'
-    groq_api_key: Optional[str]
+    # groq_api_key: Optional[str]
+    open_ai_api_key: Optional[str]
+    CHAINLIT_AUTH_SECRET: Optional[str] = None
     
     @property
     def db_url(self) -> str:
