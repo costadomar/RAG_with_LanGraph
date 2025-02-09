@@ -1,4 +1,3 @@
-from langchain.embeddings import OllamaEmbeddings
 from langchain_openai import OpenAIEmbeddings
 
 from settings import Settings

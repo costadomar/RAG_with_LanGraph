@@ -6,7 +6,7 @@ from sqlalchemy.ext.asyncio import create_async_engine
 from sqlalchemy import create_engine
 
 from langchain_postgres.vectorstores import PGVector
-from langchain.vectorstores.pgvector import DistanceStrategy
+from langchain_community.vectorstores.pgvector import DistanceStrategy
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from models.embeddings import get_embedding_function

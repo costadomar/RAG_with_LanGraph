@@ -28,7 +28,7 @@ services:
       - datasource_port=5432
       - datasource_name=${datasource_name}
       - open_ai_api_key=${open_ai_api_key}
-      - data_path=/app/documents
+      - data_path=/app/src/documents
     # volumes:
     #   - ./documents:/app/documents
     depends_on:
@@ -50,7 +50,7 @@ services:
       - datasource_name=${datasource_name}
       - open_ai_api_key=${open_ai_api_key}
       - CHAINLIT_AUTH_SECRET=${CHAINLIT_AUTH_SECRET}
-      - data_path=/app/documents
+      - data_path=/app/src/documents
     # volumes:
     #   - ./documents:/app/documents
     depends_on:

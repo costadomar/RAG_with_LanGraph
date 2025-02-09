@@ -1,5 +1,4 @@
-from langchain.document_loaders import PyPDFDirectoryLoader, word_document
-from langchain.document_loaders.word_document import UnstructuredWordDocumentLoader
+from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_community.document_loaders import Docx2txtLoader
 from utils.logging import get_logger
 from settings import Settings

@@ -1,4 +1,3 @@
-from langchain_community.llms.ollama import Ollama
 from langchain_openai import ChatOpenAI
 
 from settings import Settings
